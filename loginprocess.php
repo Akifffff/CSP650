@@ -8,14 +8,14 @@ include("dbconnect.php");
 $fuser = $_POST['fuser'];
 $fpwd = $_POST['fpwd'];
 
-$sql1 = "SELECT * FROM user WHERE username = '$fuser'"; //username exist ke tak
+$sql1 = "SELECT * FROM staff WHERE Staff_ID = '$fuser'"; //username exist ke tak
 $result1 = mysqli_query($conn, $sql1); // run statement $sql1
 $row1 = mysqli_fetch_array($result1);
 $count1 = mysqli_num_rows($result1);
 
 if($count1 > 0) //username wujud
 {
-    if($fpwd == $row1['password']) //kalau password betul
+    if($fpwd == $row1['Staff_Password']) //kalau password betul
     {
         $_SESSION['fuser'] = session_id();
         $_SESSION['fuser'] = $fuser;
