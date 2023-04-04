@@ -24,7 +24,7 @@
 
         <form action="loginprocess.php" method="post">
             <div class="form-group">
-                <label>Staff ID</label>
+                <label>ID</label>
                 <input type="text" id="fuser" name="fuser" size="20" placeholder="Enter Your ID">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>    
