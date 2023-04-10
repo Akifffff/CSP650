@@ -5,7 +5,7 @@ include('dbconnect.php');
  $fid=$_POST['fid'];  //userid
  $fname = $_POST['fname'];
 $fpwd = $_POST['fpwd'];
-$fpwd = $_POST['fic'];
+$fic = $_POST['fic'];
 $fphone = $_POST['fphone'];
 $femail = $_POST['femail'];
 
