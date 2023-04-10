@@ -2,7 +2,7 @@
 //Start session
  
 include('dbconnect.php');
- $fuser=$_POST['fid'];  //userid
+ $fid=$_POST['fid'];  //userid
  $fname = $_POST['fname'];
 $fpwd = $_POST['fpwd'];
 $fpwd = $_POST['fic'];
